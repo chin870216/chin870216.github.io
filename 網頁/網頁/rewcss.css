@@ -1,0 +1,135 @@
+body{
+	margin:0px;
+	font-family:sans-serif;
+}
+
+.title{
+	font-size:16x;
+	
+	background-color:white;
+	color:#BBBBBB;
+	height: 49px;
+	align-items:center;
+	
+	display:flex;
+	justify-content:center;
+	
+	padding-right:750px;
+	border-bottom:#BDBDBD;
+	border-width:0px 0px 1px 0px;
+	border-style:solid;
+	position:fixed;
+	padding-left:85px;
+}
+.google{
+	align-items:center;
+	display:flex;
+	height:32px;
+	margin-right:25px;
+}
+
+/*.menu-desktop{
+	display:block;	
+}*/
+.title01{
+	background-color:white;
+	height:49px;
+	text-align:center;
+	align-items:center;
+	line-height:49px;
+	border-bottom:3px solid none;
+	
+}
+.search{
+	background-color:white;
+	height:225px;
+	/*width:1400px;*/
+	margin:0px 60px 0px 60px;
+	padding-top:49px;
+	
+}
+.big_title{
+	text-align:center;
+	font-size:40px;
+	word-spacing:4px;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+}
+.search_board{
+	width:804px;
+	height:36px;
+	background-color:#F7F7F7;
+	color:#9B9B9B;
+	display:flex;
+	align-items:center;
+}
+.hr{
+	height:10px;
+	background: -webkit-linear-gradient(#B4B4B4,white);
+	background: -o-linear-gradient(#B4B4B4,white);
+	background: -moz-linear-gradient(#B4B4B4,white);
+	background: linear-gradient(#B4B4B4,white);
+}
+.event_viewall{
+	width:602px;
+	background-color: darksalmon;
+	margin:30px 20px 20px 20px;
+}
+.view_all{
+	
+	display:flex;
+	justify-content:flex-end;
+	text-align:right;
+	text-align:bottom;
+	color:#51C2EF;
+	font-size:15px;
+	
+}
+.frame{
+	display:flex;
+	justify-content:center;
+}
+/*
+	寬度 > 1200px
+	總寬度固定在  1200px
+*/
+.box{
+	width:602px;
+	height:585px;
+	background-color: darksalmon;
+	margin:20px;
+}
+.box>img{
+	width:100%;
+}
+@media (max-width:1418px){
+	.title{
+		padding-left:20px;
+		justify-content:flex-start;
+	}
+}
+/*CSS3 Media Query*/
+@media (max-width:1200px){
+	/*如果螢幕小於1200px ,套用這個區塊的設定*/
+	.frame{
+		flex-wrap:wrap;
+	}
+	.box{
+		width:45%;
+	}
+}
+
+@media (max-width:720px){
+	/*如果螢幕小於500px ,套用這個區塊的設定*/
+	.title{
+		font-size:15px;
+	}
+	.title01{
+		display:none;
+	}
+	.box{
+		width:90%;
+	}	
+}
